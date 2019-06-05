@@ -6,24 +6,24 @@ import numpy as np
 import json
 
 # Keras
-from keras.applications.vgg16 import preprocess_input
+#from keras.applications.vgg16 import preprocess_input
+from keras.applications.mobilenet import preprocess_input
 from keras.models import load_model
 from keras.preprocessing import image
 
 # Flask utils
 from flask import Flask, redirect, url_for, request, render_template
 from werkzeug.utils import secure_filename
-from gevent.pywsgi import WSGIServer
+# from gevent.pywsgi import WSGIServer
 
 # Define a flask app
 app = Flask(__name__, template_folder='templates')
 
-MODEL_PATH = 'models/Clasificador_VGG16_20196351.h5'
 
 # Load trained model and configurations
-model = load_model(MODEL_PATH)
-model._make_predict_function()
 model_config = json.load(open('models/config.json'))
+model = load_model('models/' + model_config['model_name'])
+model._make_predict_function()
 print('Model loaded. Start serving...')
 
 # Define labels of the trained model

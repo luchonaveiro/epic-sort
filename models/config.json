@@ -7,5 +7,7 @@
     "learning_rate" : 0.0001,
     "decay" : 0.000001,
     "batch_size" : 150,
-    "threshold" : 0
+    "threshold" : 0,
+	"model_name": "Clasificador_MobileNet_2019659.h5"
+	
 }
