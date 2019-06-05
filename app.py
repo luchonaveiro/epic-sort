@@ -78,7 +78,7 @@ def upload():
         	result = 'No puedo identificar correctamente :('
 
         # Delete saved image
-        os.remove(file_path)
+        #os.remove(file_path)
 
         return result
     return None
