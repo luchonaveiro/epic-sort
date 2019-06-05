@@ -16,7 +16,7 @@ from werkzeug.utils import secure_filename
 from gevent.pywsgi import WSGIServer
 
 # Define a flask app
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 
 MODEL_PATH = 'models/Clasificador_VGG16_20196351.h5'
 
