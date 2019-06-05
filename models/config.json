@@ -1,0 +1,11 @@
+{   "img_height" : 224,
+    "img_width" : 224,
+    "channels" : 3,
+    "training_epochs" : 500,
+    "architecture" : "VGG16",
+    "optimizer" : "Adam",
+    "learning_rate" : 0.0001,
+    "decay" : 0.000001,
+    "batch_size" : 150,
+    "threshold" : 0
+}
