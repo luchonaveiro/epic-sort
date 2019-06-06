@@ -78,7 +78,7 @@ def upload():
         	result = 'No puedo identificar correctamente :('
 
         # Delete saved image
-        #os.remove(file_path)
+        os.remove(file_path)
 
         return result
     return None
@@ -86,7 +86,7 @@ def upload():
 
 if __name__ == '__main__':
     #app.run(port=5000, debug=True)
-    app.run(port=5000)
+    app.run(port=5002)
 
     # Serve the app with gevent
     #http_server = WSGIServer(('', 5000), app)
