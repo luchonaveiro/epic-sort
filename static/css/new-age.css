@@ -158,9 +158,9 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: url("../img/new_bg.png") #ED7EE3;
+  background: url("../img/new_bg.png") #971F07;
   /*background: url("../img/new_bg.png"), -webkit-gradient(linear, right top, left top, from(#ED7EE3), to(#ED7EE3)); */	 
-  background: url("../img/new_bg.png"), linear-gradient(to left, #AA7EED, #ED7EE3);
+  background: url("../img/new_bg.png"), linear-gradient(to left, #971F07, #971F07);
 }
 
 header.masthead .header-content {
@@ -422,8 +422,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
   color: white;
-  border-color: #D1CECE;
-  background-color: #D1CECE;
+  border-color: #971F07;
+  background-color: #971F07;
 }
 
 .btn {
@@ -464,7 +464,7 @@ input[type="file"] {
 .upload-label{
     display: inline-block;
     padding: 12px 30px;
-    background: #D254E8;
+    background: #971F07;
     color: #fff;
     font-size: 1em;
     transition: all .4s;
@@ -477,8 +477,8 @@ input[type="file"] {
 }
 
 .loader {
-    border: 8px solid #f3f3f3; /* Light grey */
-    border-top: 8px solid #3498db; /* Blue */
+    border: 8px solid #DCB3AB; /* Bordo claro */
+    border-top: 8px solid #971F07; /* Bordo */
     border-radius: 50%;
     width: 50px;
     height: 50px;
